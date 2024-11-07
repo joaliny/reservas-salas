@@ -1,0 +1,218 @@
+/* Estilo geral */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+}
+
+/* Wrapper */
+.wrapper {
+    display: flex;
+}
+
+/* Barra Lateral */
+.sidebar {
+    width: 250px;
+    background-color: #333;
+    color: #fff;
+    height: 100vh;
+    padding-top: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-y: auto;
+}
+
+.sidebar h2 {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #444;
+}
+
+.sidebar ul li a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+}
+
+.sidebar ul li a:hover {
+    background-color: #575757;
+    color: #fff;
+}
+
+/* Conteúdo Principal */
+.main-content {
+    margin-left: 250px; /* mesma largura da sidebar */
+    padding: 20px;
+    width: calc(200% - 200px);
+}
+
+
+.main-content header h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.content-area {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo dos Modais */
+.modal .modal-content {
+    border-radius: 8px;
+}
+
+.modal-header {
+    background-color: #333;
+    color: #fff;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.modal-title {
+    font-size: 18px;
+}
+
+.modal-body {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Listas de Itens */
+.sala-list, .solicitacao-list {
+    margin-top: 10px;
+}
+
+.sala-item, .solicitacao-item {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.sala-item p, .solicitacao-item p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.sala-item button, .solicitacao-item button {
+    margin-right: 5px;
+}
+
+button.btn-primary {
+    background-color: #007bff;
+    border: none;
+    padding: 5px 10px;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button.btn-secondary {
+    background-color: #6c757d;
+    border: none;
+    padding: 5px 10px;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button.btn-danger {
+    background-color: #dc3545;
+    border: none;
+    padding: 5px 10px;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+
+/* Footer */
+.footer {
+    background-color: #ffffff;
+    color: #575757;
+    text-align: center;
+    padding: 5px 0;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 10;
+    width: 300px;
+    bottom: 0;
+    width: 80%;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+
+
+
+.room h3 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.room ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.room ul li {
+    font-size: 16px;
+    color: #555;
+    padding: 5px 0;
+}
+
+.room img {
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.rooms-grid { 
+    display: flex; 
+    gap: 40px; /* Espaço entre as divs */ 
+} 
+    .room { 
+        flex: 1; 
+        border: 1px solid #ccc; 
+        padding: 10px; 
+        background-color: #f9f9f9; 
+    }
+
+/* Estilos para a lista de salas */
+   .sala-item {
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+   .modal-body .btn {
+    margin-top: 5px;
+}
